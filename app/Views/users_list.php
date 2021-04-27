@@ -10,10 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom Styyes -->
     <link rel="stylesheet" href="/css/user_list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
 <title>User list exercise</title>
 </head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
 <div class="container mt-3 mb-4">
 <div class="col-lg-9 mt-4 mt-lg-0">
     <div class="row">
@@ -33,8 +35,6 @@
             if (isset($users)){
             foreach ($users as $key) {
               ?>
-                   
-                    
                     <tr class="candidates-list">
                 <td class="title">
                   <div class="thumb">
@@ -78,12 +78,12 @@
 </div>
 
 
-<!-- Modal: Create new study -->
+<!-- Modal: Create new Candidate -->
 <div class="modal fade" id="createNewCandidate" tabindex="-1" aria-labelledby="createNewCandidate" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content pds-modal-content">
         <div class="modal-header pds-modal-header">
-            <h5 class="modal-title" id="createNewStudyLabel">Create new candidate</h5>
+            <h5 class="modal-title" id="createNewCandidateLabel">Create new candidate</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" class="material-icons pds-modal-header__icon">close</span>
             </button>
@@ -95,20 +95,20 @@
                     <input type="text" class="form-control pds-form-control" name="CandidateFirstName" id="CandidateFirstName" aria-describedby="CandidateFirstName" required="required">
                 </div>
                 <div class="mb-3">
-                    <label for="studyDescription" class="form-label mb-0 pds-text--grey-dark pds-form-label">Candidate last name</label>
-                    <input type="text" class="form-control pds-form-control" name="studyDescription" id="studyDescription">
+                    <label for="CandidateLastName" class="form-label mb-0 pds-text--grey-dark pds-form-label">Candidate last name</label>
+                    <input type="text" class="form-control pds-form-control" name="CandidateLastName" id="CandidateLastName">
                 </div>
                 <div class="mb-3">
-                    <label for="studyDescription" class="form-label mb-0 pds-text--grey-dark pds-form-label">profile pic (URL)</label>
-                    <input type="text" class="form-control pds-form-control" name="studyDescription" id="studyDescription">
+                    <label for="profilePic" class="form-label mb-0 pds-text--grey-dark pds-form-label">profile pic (URL)</label>
+                    <input type="text" class="form-control pds-form-control" name="profilePic" id="profilePic">
                 </div>
                 <div class="mb-3">
-                    <label for="studyDescription" class="form-label mb-0 pds-text--grey-dark pds-form-label">Position</label>
-                    <input type="text" class="form-control pds-form-control" name="studyDescription" id="studyDescription">
+                    <label for="CandidatePosition" class="form-label mb-0 pds-text--grey-dark pds-form-label">Position</label>
+                    <input type="text" class="form-control pds-form-control" name="CandidatePosition" id="CandidatePosition">
                 </div>
                 <div class="pds-mb-24">
-                    <label for="StudyFolder" class="form-label mb-0 pds-text--grey-dark pds-form-label">Status</label>
-                    <select class="form-control pds-form-control" name="StudyFolder" aria-label="Please select a folder for the new study" id="StudyFolder">
+                    <label for="CandidateStatus" class="form-label mb-0 pds-text--grey-dark pds-form-label">Status</label>
+                    <select class="form-control pds-form-control" name="CandidateStatus" aria-label="Please select a status for the new candidate" id="CandidateStatus">
                     <option value="Shortlisted" selected>Shortlisted</option>
                       <option value="Active" >Active</option>
                       <option value="Archived" >Archived</option>
@@ -117,7 +117,7 @@
                 </div>
         </div>
         <div class="modal-footer justify-content-start pds-mb-40 pds-modal-footer">
-            <button type="submit" name="submit_study" class="btn btn-primary pds-btn pds-btn__primary pds-shadow pds-shadow-hover">Create study</button>
+            <button type="submit" name="submit_candidate" class="btn btn-primary pds-btn pds-btn__primary pds-shadow pds-shadow-hover">Create Candidate</button>
             <button type="button" class="btn pds-btn pds-btn__secondary" data-dismiss="modal">Cancel</button>
         </div>
         </div>
