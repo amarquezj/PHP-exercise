@@ -26,11 +26,9 @@ and any database settings.
 
 ## Setup database
 
-For this exercise we will need to create a MYSQL database with name  exercise_php and import the SQL file located in the Database folder of the project.
 For the sake of the exercise MYSQL workbench can be used. -> https://www.mysql.com/products/workbench/
 
-In order to import the database content just create a new schema directly from MYSQL workbench and call it exercise_php. 
-Once the schema is created open a SQL tab and copy and execute the content of InitExercise.sql file located in app/database folder
+In order to import the database content open a SQL tab and copy and execute the content of InitExercise.sql file located in app/database folder. This will create the schema exercise_php, the table users and insert 3 rows in the table.
 
 
 
