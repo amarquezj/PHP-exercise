@@ -1,4 +1,4 @@
-# CodeIgniter 4 Application Starter
+# PHP Exercise
 
 ## What is CodeIgniter?
 
@@ -49,8 +49,8 @@ The most common way to load a PHP extension is to include it in your php.ini con
 
 Note that, on PHP version 7.2.0 and up, the extension name may be used instead of the extension's file name. As this is OS-independent and easier, especially for newcomers, it becomes the recommended way of specifying extensions to load. File names remain supported for compatibility with prior versions.
 
-;extension=php_extname.dll
-extension=php_extname.dll
+ - ;extension=php_extname.dll
+ - extension=php_extname.dll
 
 
 ## Start the server
