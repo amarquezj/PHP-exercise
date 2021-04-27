@@ -64,5 +64,10 @@ If everything was done correctly you should get something like this:
 
 ## Implement delete functionality
 
+The first exercise will be to implement the delete functionality in the candidate list. As you can see there is a delete button in the list for each candidate. 
+The exercise consists in modify the HTML and PHP files so when a user clicks the delete button the user is deleted from the database and it will not appear in the list anymore. (No confirmation message or popup is needed.)
+
 
 ## Implement Create new candidate functionality
+
+The second exercise will be to complete the Create new candidate functionality. The popup is already created but the PHP code that retrieves the information and insert it in the database is not in place yet. 
