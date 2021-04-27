@@ -9,20 +9,4 @@ class UserModel extends Model{
 
 
 
-  function verifyUniid($uniid){
-    $db      = \Config\Database::connect();
-    //Retrieve User with Uniid 
-    $builder = $db->table('users');
-    $builder->select("activation_date, uniid, status, recover_date");
-    $builder->where('uniid', $uniid);
-    $result = $builder->get();
-    if($builder->countAll = 1){
-      return $result->getRow();
-    }else{
-      return false;
-    }
-  }
-
-
-
 }

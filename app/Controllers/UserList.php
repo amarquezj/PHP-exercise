@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\UserModel;
+
 class UserList extends BaseController
 {
 	public function index()
@@ -14,9 +16,9 @@ class UserList extends BaseController
 
 	//This function retrieve all the users of the Users table
 	public function retrieve_users(){
-		
-        //$model = new StudiesModel();
-        //return $model ->get_projects($projectFolder, $corporationId);
+		$model = new UserModel();
+        $users = $model->findAll();
+		return $users;
     }
 
 }
