@@ -19,17 +19,17 @@ Once PHP is installed, Composer can be installed following this guide: https://g
 Once all of this is installed open a terminal locate yourself in the PHP-Exercise folder and run `composer update`
 
 
-## Setup
-
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
 ## Setup database
 
 For the sake of the exercise MYSQL workbench can be used. -> https://www.mysql.com/products/workbench/
 
 In order to import the database content open a SQL tab and copy and execute the content of InitExercise.sql file located in app/database folder. This will create the schema exercise_php, the table users and insert 3 rows in the table.
 
+
+## Setup Project
+
+Copy `env` to `.env` and tailor for your app, specifically the baseURL
+and any database settings.
 
 
 ## Server Requirements
@@ -44,6 +44,13 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+
+The most common way to load a PHP extension is to include it in your php.ini configuration file. Please note that many extensions are already present in your php.ini and that you only need to remove the semicolon to activate them.
+
+Note that, on PHP version 7.2.0 and up, the extension name may be used instead of the extension's file name. As this is OS-independent and easier, especially for newcomers, it becomes the recommended way of specifying extensions to load. File names remain supported for compatibility with prior versions.
+
+;extension=php_extname.dll
+extension=php_extname.dll
 
 
 ## Start the server
