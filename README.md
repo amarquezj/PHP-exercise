@@ -24,6 +24,14 @@ Once all of this is installed open a terminal locate yourself in the PHP-Exercis
 Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
 
+## Setup database
+
+For this exercise we will need to create a MYSQL database with name  exercise_php and import the SQL file located in the Database folder of the project.
+For the sake of the exercise MYSQL workbench can be used. -> https://www.mysql.com/products/workbench/
+
+In order to import the database content just create a new schema directly from MYSQL workbench and call it exercise_php. 
+Once the schema is created open a SQL tab and copy and execute the content of InitExercise.sql file located in app/database folder
+
 
 
 ## Server Requirements
@@ -48,6 +56,9 @@ CodeIgniter 4 comes with a local development server, leveraging PHP’s built-in
 
 `php spark serve`
 This will launch the server and you can now view your application in your browser at http://localhost:8080.
+
+If everything was done correctly you should get something like this:
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 # Exercises
 
