@@ -58,7 +58,7 @@ CodeIgniter 4 comes with a local development server, leveraging PHP’s built-in
 This will launch the server and you can now view your application in your browser at http://localhost:8080.
 
 If everything was done correctly you should get something like this:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/amarquezj/PHP-exercise/blob/master/picturesForMD/CandidatesList.PNG?raw=true)
 
 # Exercises
 
