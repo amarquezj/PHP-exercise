@@ -8,7 +8,7 @@ class UserList extends BaseController
 {
 	public function index()
 	{
-		//Save users array in order to send it to the view
+		//Save users array to send it to the view
 		$data["users"] = $this->retrieve_users();
 
 		return view('users_list' , $data);
@@ -20,5 +20,9 @@ class UserList extends BaseController
         $users = $model->findAll();
 		return $users;
     }
+
+	//Exercise 1 - Delete users
+
+	//Exercise 2 - Add users
 
 }
